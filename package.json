@@ -1,0 +1,30 @@
+{
+  "name": "alien-presale-deploy",
+  "version": "1.0.0",
+  "description": "Деплой пресейла ALIEN Token",
+  "main": "deploy_presale.js",
+  "scripts": {
+    "deploy": "hardhat run deploy_presale.js --network polygon",
+    "deploy:test": "hardhat run deploy_presale.js --network mumbai",
+    "compile": "hardhat compile",
+    "verify": "hardhat verify --network polygon"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.17.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-verify": "^1.1.0"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "polygon",
+    "presale",
+    "token"
+  ],
+  "author": "ALIEN Team",
+  "license": "MIT"
+}
